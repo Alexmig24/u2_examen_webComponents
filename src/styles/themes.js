@@ -1,40 +1,36 @@
-// src/styles/themes.js
 export const themes = {
   azul: {
-    borderColor: '#003C71',
-    headerBg: '#FFD700',
-    textColor: '#000'
+    border: '#003C71',
+    background: '#003C71',
+    text: 'white'
   },
   verde: {
-    borderColor: '#2E7D32',
-    headerBg: '#A5D6A7',
-    textColor: '#1B5E20'
+    border: '#2E7D32',
+    background: '#66BB6A',
+    text: 'white'
   },
   rojo: {
-    borderColor: '#C62828',
-    headerBg: '#FFCDD2',
-    textColor: '#B71C1C'
+    border: '#C62828',
+    background: '#EF5350',
+    text: 'white'
   },
   gris: {
-    borderColor: '#424242',
-    headerBg: '#BDBDBD',
-    textColor: '#212121'
+    border: '#424242',
+    background: '#BDBDBD',
+    text: '#212121'
   },
   naranja: {
-    borderColor: '#EF6C00',
-    headerBg: '#FFE0B2',
-    textColor: '#E65100'
+    border: '#EF6C00',
+    background: '#FFB74D',
+    text: 'black'
   }
 };
 
-// Mapea el último dígito con el tema
-export function getThemeByIdDigit(digit) {
-  const map = {
-    0: 'azul', 1: 'azul',
-    2: 'verde', 3: 'verde',
-    4: 'rojo', 5: 'rojo',
-    6: 'gris', 7: 'gris',
-    8: 'naranja', 9: 'naranja'
-  };
-  return themes[map[digit]] || themes.azul;
+export function getThemeByCedulaDigit(digit) {
+  const number = parseInt(digit);
+  if ([0, 1].includes(number)) return themes.azul;
+  if ([2, 3].includes(number)) return themes.verde;
+  if ([4, 5].includes(number)) return themes.rojo;
+  if ([6, 7].includes(number)) return themes.gris;
+  return themes.naranja;
 }

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports={
     mode: 'development',
     devtool: 'source-map',
@@ -17,6 +18,6 @@ module.exports={
         ],
     },
     plugins:[new HtmlWebpackPlugin({
-        template:'./src/index.html',
+        template:'index.html',
     })],
 }

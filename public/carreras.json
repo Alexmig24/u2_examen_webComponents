@@ -1,0 +1,30 @@
+[
+  {
+    "nombre": "Ingeniería en Software",
+    "facultad": "FACI",
+    "descripcion": "Desarrollo de software, sistemas y soluciones digitales.",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-4HLeqmXKhIwNRAwecqUWXc87kv0QjEYpQw&s",
+    "id": 1
+  },
+  {
+    "nombre": "Ingeniería Mecatrónica",
+    "facultad": "FIME",
+    "descripcion": "Automatización, robótica y control de sistemas.",
+    "imagen": "https://revistaderobots.com/wp-content/uploads/2019/04/Foto-robot.jpeg",
+    "id": 5
+  },
+  {
+    "nombre": "Biotecnología",
+    "facultad": "FICA",
+    "descripcion": "Procesos biotecnológicos aplicados a la industria.",
+    "imagen": "https://images.theconversation.com/files/434734/original/file-20211130-24-2o42g9.jpg?ixlib=rb-4.1.0&rect=0%2C201%2C5176%2C2584&q=45&auto=format&w=1356&h=668&fit=crop",
+    "id": 3
+  },
+  {
+    "nombre": "Ingeniería Petroquímica",
+    "facultad": "FIMAE",
+    "descripcion": "Transformación de materias primas en productos energéticos.",
+    "imagen": "https://fcmmex.com/news/petroquimica.jpg",
+    "id": 8
+  }
+]

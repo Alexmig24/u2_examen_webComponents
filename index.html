@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carreras ESPE</title>
+  <script type="module" src="./src/index.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #003C71;
+    }
+
+    header {
+      background-color: #003C71;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+
+    career-selector {
+      flex: 1 1 250px;
+      max-width: 300px;
+    }
+
+    career-card {
+      flex: 1 1 300px;
+      max-width: 340px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Carreras Universidad de las Fuerzas Armadas ESPE</h1>
+  </header>
+
+  <main>
+    <career-selector></career-selector>
+    <career-card></career-card>
+  </main>
+
+  <script>
+    const card = document.querySelector('career-card');
+    card.cedulaLastDigit = 2300400799; // Cambia según tu cédula real
+
+    document.addEventListener('career-selected', (e) => {
+      card.carrera = e.detail;
+    });
+  </script>
+</body>
+</html>
