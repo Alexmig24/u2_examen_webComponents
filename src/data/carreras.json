@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Ingeniería de Software",
+    "facultad": "Ciencias de la Computación",
+    "descripcion": "Desarrollo de software de calidad y soluciones tecnológicas.",
+    "imagen": "https://via.placeholder.com/300x180?text=Software"
+  },
+  {
+    "nombre": "Mecatrónica",
+    "facultad": "Ingeniería Eléctrica",
+    "descripcion": "Integración de sistemas mecánicos, electrónicos y de control.",
+    "imagen": "https://via.placeholder.com/300x180?text=Mecatronica"
+  },
+  {
+    "nombre": "Biotecnología",
+    "facultad": "Ciencias de la Vida",
+    "descripcion": "Aplicaciones tecnológicas de procesos biológicos.",
+    "imagen": "https://via.placeholder.com/300x180?text=Biotecnologia"
+  },
+  {
+    "nombre": "Petroquímica",
+    "facultad": "Energía y Petróleos",
+    "descripcion": "Procesamiento y aprovechamiento de recursos hidrocarburíferos.",
+    "imagen": "https://via.placeholder.com/300x180?text=Petroquimica"
+  }
+]
